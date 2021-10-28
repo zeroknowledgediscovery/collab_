@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --account mlg-core
+#SBATCH --partition=volta
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --gres=gpu:1
+#SBATCH --time=2:00:00
+#SBATCH --job-name=TransEQ_47
+#SBATCH --output=TransEQ_47.out
+#SBATCH --error=TransEQ_47.err
+
+srun --unbuffered python /hpcgpfs01/scratch/yhuang2/UChicago/transformer//generate_model.py /hpcgpfs01/scratch/yhuang2/UChicago/transformer/checkpoints/2009-01-01_2020-08-2127.0#30.0#126.0#129.0#VAR /hpcgpfs01/scratch/yhuang2/UChicago/transformer/datasets/2009-01-01_2020-08-2127.0#30.0#126.0#129.0#VAR_train.dat 25
+srun --unbuffered python /hpcgpfs01/scratch/yhuang2/UChicago/transformer//run_model.py /hpcgpfs01/scratch/yhuang2/UChicago/transformer/checkpoints/2009-01-01_2020-08-2127.0#30.0#126.0#129.0#VAR /hpcgpfs01/scratch/yhuang2/UChicago/transformer/datasets/2009-01-01_2020-08-2127.0#30.0#126.0#129.0#VAR_test.dat /hpcgpfs01/scratch/yhuang2/UChicago/transformer/results/2009-01-01_2020-08-2127.0#30.0#126.0#129.0#VAR_out.dat

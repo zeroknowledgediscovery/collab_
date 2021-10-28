@@ -1,0 +1,18 @@
+2021-10-13 20:57:18.807030: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudnn.so.8'; dlerror: libcudnn.so.8: cannot open shared object file: No such file or directory
+2021-10-13 20:57:18.807213: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1835] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-10-13 20:57:18.807568: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-10-13 20:57:18.851311: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-10-13 21:56:20.580980: W tensorflow/python/util/util.cc:348] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+WARNING:absl:Found untraced functions such as encoder_1_layer_call_and_return_conditional_losses, encoder_1_layer_call_fn, decoder_2_layer_call_and_return_conditional_losses, decoder_2_layer_call_fn, embedding_3_layer_call_and_return_conditional_losses while saving (showing 5 of 60). These functions will not be directly callable after loading.
+2021-10-13 21:56:25.343447: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudnn.so.8'; dlerror: libcudnn.so.8: cannot open shared object file: No such file or directory
+2021-10-13 21:56:25.343630: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1835] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-10-13 21:56:25.343938: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-10-13 21:56:26.442029: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+/hpcgpfs01/scratch/yhuang2/UChicago/transformer//run_model.py:51: UserWarning: FixedFormatter should only be used together with FixedLocator
+  ax.set_xticklabels([''] + sentence,fontdict=fontdict,   rotation=0)
+/hpcgpfs01/scratch/yhuang2/UChicago/transformer//run_model.py:52: UserWarning: FixedFormatter should only be used together with FixedLocator
+  ax.set_yticklabels([''] + predicted_sentence, rotation=90,fontdict=fontdict)
